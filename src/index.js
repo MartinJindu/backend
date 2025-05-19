@@ -2,11 +2,13 @@ import express from "express";
 import "dotenv/config.js";
 import authRoutes from "./routes/authRoutes.js";
 import bookRoutes from "./routes/bookRoutes.js";
+import cors from "cors";
 import { connectDB } from "./lib/db.js";
 
 const app = express();
 
 app.use(express.json());
+app.use(cors());
 
 // Routes
 app.use("/api/auth", authRoutes);
