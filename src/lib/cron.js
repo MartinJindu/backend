@@ -3,7 +3,7 @@ import "dotenv/config";
 import https from "https";
 // import http from "http";
 
-const job = new CronJob("*/1 * * * *", function () {
+const job = new CronJob("*/14 * * * *", function () {
   const url = process.env.API_URL;
 
   if (!url) {
