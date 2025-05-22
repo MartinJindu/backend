@@ -10,7 +10,7 @@ const app = express();
 
 app.use(express.json());
 app.use(cors());
-job.start(); // for cron job
+// job.start(); // for cron job
 
 // Routes
 app.get("/", (req, res) => {
