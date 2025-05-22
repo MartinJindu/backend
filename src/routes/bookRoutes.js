@@ -52,6 +52,7 @@ router.get("/", protectRoute, async (req, res) => {
 
     // total number of book in db
     const totalBooks = await Book.countDocuments();
+    // console.log("Book sent");
 
     res.send({
       books,
